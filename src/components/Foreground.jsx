@@ -3,7 +3,7 @@ import Card from "./Card";
 
 
 function Foreground() {
-  
+
   const ref = useRef(null) ;
 
   const data = [
