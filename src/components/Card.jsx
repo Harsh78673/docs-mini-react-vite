@@ -2,7 +2,7 @@ import React from "react";
 import { FaRegFileAlt } from "react-icons/fa";
 import { LuDownload } from "react-icons/lu";
 import { IoClose } from "react-icons/io5";
-import { motion } from "framer-motion" // framer motion is a animation library like gsap but for react. just add motion. at the start of a tag to make it drag and drop motion wala
+import { motion } from "motion/react" // framer motion is a animation library like gsap but for react. just add motion. at the start of a tag to make it drag and drop motion wala
 function Card({ data, reference }) {
   return (
     <motion.div drag dragConstraints={reference} whileDrag={{scale:1.1}} deagElastic={0.2} dragTransition={{ bounceStiffness: 400, bounceDamping: 20 }} className="relative flex-shrink-0 w-60 h-72 rounded-[40px] bg-zinc-900/90 text-white px-8 py-10 overflow-hidden">
